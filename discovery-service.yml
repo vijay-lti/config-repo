@@ -1,0 +1,16 @@
+server:
+  port: 8061
+  
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+      enableSelfPreservation: 0
